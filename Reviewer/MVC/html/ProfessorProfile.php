@@ -64,7 +64,7 @@
                                         $rateLink = "javascript:void(0);";
                                         $onClickAttr = "onclick=\"showReviewerWarning()\"";
                                     } else {
-                                        $rateLink = "ProfessorReview.php?P_id=$p_id&name=" . urlencode($prof['Name']) . "&dept=" . urlencode($prof['Department']) . "&uni=" . urlencode($prof['University']);
+                                        $rateLink = "../../../Student/MVC/php/ProfessorReview.php?P_id=$p_id&name=" . urlencode($prof['Name']) . "&dept=" . urlencode($prof['Department']) . "&uni=" . urlencode($prof['University']);
                                         $onClickAttr = ""; 
                                     }
                                 } else {

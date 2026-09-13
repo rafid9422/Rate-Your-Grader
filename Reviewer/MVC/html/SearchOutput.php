@@ -134,7 +134,7 @@
                                         Rate Now &nbsp; <?= $iconArrow ?>
                                     </a>
                                 <?php else: ?>
-                                    <a href="ProfessorReview.php?P_id=<?= $row['P_id'] ?>&name=<?= urlencode($row['Name']) ?>&dept=<?= urlencode($row['Department']) ?>&uni=<?= urlencode($row['University']) ?>" 
+                                    <a href="../../../Student/MVC/php/ProfessorReview.php?P_id=<?= $row['P_id'] ?>&name=<?= urlencode($row['Name']) ?>&dept=<?= urlencode($row['Department']) ?>&uni=<?= urlencode($row['University']) ?>" 
                                        class="rate-profile-btn" style="text-decoration: none;">
                                         Rate Now &nbsp; <?= $iconArrow ?>
                                     </a>
