@@ -147,15 +147,21 @@
                             <?php echo $review_text_display; ?>
                         </div>
                         <div class="card-footer">
-                            <a href="ProfessorProfile.php?P_id=<?= $row['P_id'] ?>" class="view-profile-link" style="text-decoration: none;">
+                            <a href="../../../Student/MVC/php/ProfessorProfile.php?P_id=<?= $row['P_id'] ?>" class="view-profile-link" style="text-decoration: none;">
                                 View Profile &nbsp; <?= $iconArrow ?>
                             </a>
                             
                             <?php if (isset($_SESSION['user_name'])): ?>
-                                <a href="ProfessorReview.php?P_id=<?= $row['P_id'] ?>&name=<?= urlencode($row['Name']) ?>&dept=<?= urlencode($row['Department']) ?>&uni=<?= urlencode($row['University']) ?>" 
-                                   class="rate-profile-btn" style="text-decoration: none;">
-                                    Rate Now &nbsp; <?= $iconArrow ?>
-                                </a>
+                                <?php if ($user_role === 'UniRep' || $user_role === 'Reviewer'): ?>
+                                    <a href="javascript:void(0);" class="rate-profile-btn" style="text-decoration: none; opacity: 0.7; cursor: not-allowed;" title="Only students can submit reviews.">
+                                        Rate Now &nbsp; <?= $iconArrow ?>
+                                    </a>
+                                <?php else: ?>
+                                    <a href="../../../Student/MVC/php/ProfessorReview.php?P_id=<?= $row['P_id'] ?>&name=<?= urlencode($row['Name']) ?>&dept=<?= urlencode($row['Department']) ?>&uni=<?= urlencode($row['University']) ?>" 
+                                       class="rate-profile-btn" style="text-decoration: none;">
+                                        Rate Now &nbsp; <?= $iconArrow ?>
+                                    </a>
+                                <?php endif; ?>
                             <?php else: ?>
                                 <a href="javascript:void(0);" onclick="showLoginMessage()" class="rate-profile-btn" style="text-decoration: none;">
                                     Rate Now &nbsp; <?= $iconArrow ?>

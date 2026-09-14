@@ -7,7 +7,7 @@ include '../db/Config.php';
 $iconUser  = '<img src="../images/iconUser.png" alt="User" style="width: 4rem; height: 4rem; object-fit: contain;">';
 $starFull  = '<img src="../images/starFull.png" alt="Star" style="width: 1.2em; height: 1.2em; vertical-align: middle;">';
 $starHalf  = '<img src="../images/starHalf.jpg" alt="Half Star" style="width: 1.2em; height: 1.2em; vertical-align: middle;">';
-$starEmpty = '<img src="../images/zeroStar.png" alt="Empty Star" style="width: 1.2em; height: 1.2em; vertical-align: middle;">';
+$starEmpty = '<img src="../images/starEmpty.png" alt="Empty Star" style="width: 1.2em; height: 1.2em; vertical-align: middle;">';
 $iconArrow = '<img src="../images/iconArrow.png" alt="Arrow" style="width: 1em; height: 1em; vertical-align: middle;">';
 
 //SEARCH LOGIC
