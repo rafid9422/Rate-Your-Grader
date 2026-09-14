@@ -118,16 +118,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         header("Location: ../../../Reviewer/MVC/php/ReviewerDashboard.php");
                         exit();
                     } 
-                    // FIXED ADMIN REDIRECT LOGIC
                     elseif ($user_role === 'Admin') {
                         header("Location: ../../../Admin/MVC/php/AdminDashboard.php");
                         exit();
-                    } 
-                    else {
-                        // Fallback
-                        header("Location: HomePage.php?login=success"); 
+                    }
+                    elseif ($user_role === 'UniRep') {
+                        header("Location: ../../../UniversityRepresentative/MVC/php/UniversityRepDashboard.php");
                         exit();
                     }
+                    else {
+                        header("Location: HomePage.php?login=success"); 
+                        exit();
+}
 
                 } else {
                     $login_error = "Incorrect Password";

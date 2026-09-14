@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/HomePage.css">
     <title>Rate Your Grader</title>
 </head>
 <body>
@@ -62,117 +62,7 @@
                                 
             </div>
 
-            <div class="hero-slider fade-in">
-<div class="slider-box">
-        <div class="slider-track">
-            
-            <div class="review-card">
-                <div class="quote-icon">"</div>
-                <p class="review-text">Challenging but rewarding, this physics course builds strong problem-solving skills while making complex concepts feel surprisingly intuitive.</p>
-                <div class="rating">★★★★★</div>
-                <div class="student-info">
-                    <img src="../images/caleb.png" alt="Avatar" class="student-avatar">
-                    <div class="student-details">
-                        <h3>Khaled Mahamud</h3>
-                        <p>Physics 101</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="review-card">
-                <div class="quote-icon">"</div>
-                <p class="review-text">Comprehensive curriculum. The mentorship program connected me with real professionals.</p>
-                <div class="rating">★★★★★</div>
-                <div class="student-info">
-                    <img src="../images/sofia.png" alt="Avatar" class="student-avatar">
-                    <div class="student-details">
-                        <h3>Tasnim Jara</h3>
-                        <p>Data Science 202</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="quote-icon">"</div>
-                <p class="review-text">The supportive community made the journey enjoyable. I've now built three apps!</p>
-                <div class="rating">★★★★★</div>
-                <div class="student-info">
-                    <img src="../images/caleb.png" alt="Avatar" class="student-avatar">
-                    <div class="student-details">
-                        <h3>Khorshed Alom</h3>
-                        <p>Web Development</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="quote-icon">"</div>
-                <p class="review-text">Clear, practical, and well-structured, this database course makes complex concepts easy to understand through hands-on examples.</p>
-                <div class="rating">★★★★★</div>
-                <div class="student-info">
-                    <img src="../images/destiny.png" alt="Avatar" class="student-avatar">
-                    <div class="student-details">
-                        <h3>Sadia Afrin</h3>
-                        <p>Database Managemnet System</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="quote-icon">"</div>
-                <p class="review-text">Challenging yet fascinating, the Theory of Computation course sharpens logical thinking and reveals the mathematical foundations of computer science.</p>
-                <div class="rating">★★★★★</div>
-                <div class="student-info">
-                    <img src="../images/jessica.png" alt="Avatar" class="student-avatar">
-                    <div class="student-details">
-                        <h3>Riazul Islam</h3>
-                        <p>Theory of Computation</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="quote-icon">"</div>
-                <p class="review-text">Comprehensive curriculum. The mentorship program connected me with real professionals.</p>
-                <div class="rating">★★★★★</div>
-                <div class="student-info">
-                    <img src="../images/maria.png" alt="Avatar" class="student-avatar">
-                    <div class="student-details">
-                        <h3>Sirajum Munira</h3>
-                        <p>Machine Learning</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="quote-icon">"</div>
-                <p class="review-text">Beginner-friendly and engaging, the Introduction to Programming course builds strong fundamentals through clear explanations and practical exercises.</p>
-                <div class="rating">★★★★★</div>
-                <div class="student-info">
-                    <img src="../images/ryan.png" alt="Avatar" class="student-avatar">
-                    <div class="student-details">
-                        <h3>Oishi Sultana</h3>
-                        <p>Introduction to programming</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="quote-icon">"</div>
-                <p class="review-text">Well-structured and practical, the Electrical Circuit course clearly explains fundamentals while strengthening analytical and problem-solving skills.</p>
-                <div class="rating">★★★★★</div>
-                <div class="student-info">
-                    <img src="../images/micah.png" alt="Avatar" class="student-avatar">
-                    <div class="student-details">
-                        <h3>Mousumi Bala</h3>
-                        <p>Electrical Circuits</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-            </div>
 
             
         </div>

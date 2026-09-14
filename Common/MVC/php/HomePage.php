@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "../db/config.php";
+include "../db/Config.php";
 
 
 $searchAction = "../../../Student/MVC/php/SearchOutput.php"; 

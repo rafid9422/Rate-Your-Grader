@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     //Get All Users
     if ($action === 'get_users') {
-        $sql = "SELECT s_id, Username, Email, Role FROM users WHERE Role = 'student' OR Role = 'User' OR ROLE = 'Reviewer'OR Role = 'UniRep'";
+        $sql = "SELECT s_id, Username, Email, Role FROM users WHERE Role = 'Student' OR Role = 'Reviewer' OR Role = 'UniRep'";
         $res = $conn->query($sql);
         $users = [];
         if($res) while ($row = $res->fetch_assoc()) $users[] = $row;
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $searchTerm = "%" . $query . "%"; 
         
         $sql = "SELECT s_id, Username, Email, Role FROM users 
-                WHERE (Role = 'student' OR Role = 'User' OR Role IS NULL OR Role = '') 
+                WHERE (Role = 'Student' OR Role IS NULL OR Role = '') 
                 AND Username LIKE ?";
         
         $stmt = $conn->prepare($sql);
@@ -339,9 +339,9 @@ if (!isset($_SESSION['s_id']) || !isset($_SESSION['role']) || $_SESSION['role'] 
     exit(); 
 }
 
-$cnt_users = $conn->query("SELECT COUNT(*) as c FROM users WHERE Role = 'student' OR Role = 'Reviewer' OR Role = 'UniRep'")->fetch_assoc()['c'];
+$cnt_users = $conn->query("SELECT COUNT(*) as c FROM users WHERE Role = 'Student' OR Role = 'Reviewer' OR Role = 'UniRep'")->fetch_assoc()['c'];
 $cnt_rev = $conn->query("SELECT COUNT(*) as c FROM users WHERE Role = 'Reviewer'")->fetch_assoc()['c'];
-$cnt_unirep = $conn->query("SELECT COUNT(*) as c FROM users WHERE Role = 'UniRep' OR Role = 'uni_rep'")->fetch_assoc()['c'];
+$cnt_unirep = $conn->query("SELECT COUNT(*) as c FROM users WHERE Role = 'UniRep'")->fetch_assoc()['c'];
 
 // Count UNIQUE Professors only
 $cnt_prof = $conn->query("SELECT COUNT(DISTINCT Name, Department, University) as c FROM professors")->fetch_assoc()['c'];
